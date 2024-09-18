@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: decoratorDemo
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+decorator.datasource:
+  p6spy:
+    enable-logging: false
+
+
